@@ -3,7 +3,7 @@
 and web designing or other suitable position.
 - 🌱 I’m currently learning angular js and Ruby on rails.
 - 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me via GitHub.com/cool31/w3schools_project/project1/navmenu.html
+- 📫 How to reach me via GitHub.com/cool31/w3schools_project/main/navmenu.html
 
 <!---
 Cool31/Cool31 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
