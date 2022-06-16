@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>Nav Menu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "preconnect" href = "https://github.com/cool31/w3schools_project/main/.../">
+<link rel = "prerender" href = "https://github.com/cool31/w3schools_project/main/.../">
+<link rel = "prefetch" href = "https://github.com/cool31/w3schools_project/main/.../">
+<link rel = "DNS-Prefetch" href = "https://github.com/cool31/w3schools_project/main/.../">
+
+<link rel="stylesheet" type="text/css" href= "https://.../stylesheet.css">
+
+<script src="path/to.js"></script>
+
+<script src="https://kit.fontawesome.com/a86d3779f6.js" crossorigin="anonymous" ></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+*{
+ box-sizing: borderbox;
+}
+
+body, html {
+  height: 100%;
+}
+
+.travelers{
+ position: fixed;
+  height: 210px;
+  width: 450px;
+  position: relative;
+  z-index: 1;
+  top: 10px;
+  left: 0;
+  background-color: brown;
+  color: white;
+  overflow-x: visible;
+  transition: 0.5s;
+  padding-top: 15px;
+  border: 20px solid green;
+  background-image: url('https://github.com/cool31/w3schools_project/main/scenary/colorful_landscape.jpg');
+}
+
+.travelers a{
+  padding: 2px 2px 2px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: coral;
+  display: inline;
+  transition: 0.3s;
+}
+
+.travelers a:hover {
+  color: green;
+}
+
+p{
+text-indent: 60px;
+text-shadow: 4px 3px orange;
+font: Blackadder ITC;
+}
+
+.travelers .plane{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.ticket {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: indigo;
+  color: red;
+  padding: 10px 15px;
+  border: 10px solid dodgerblue;
+}
+
+.ticket:hover {
+  background-color: orange;
+}
+
+#offplane{
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .travelers {padding-top: 19px;}
+  .travelers a {font-size: 18px;}
+}
+   
+.parag{
+  background-image: url('https://github.com/cool31/w3schools_project/main/scenary/waterfallinshiraz.jpg');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+</style>
+</head>
+
+<body onload= "alert('Scroll down to see Home Page and click on window')">
+
+<div class = "parag"></div>
+<p id = "deza"></p>
+
+<div id="trave" class="travelers">
+  <a href="javascript:void(0)" class= "plane" onclick="planetarmac()">X</a>
+  
+  <a href="https://github.com/cool31/w3schools_project/main/receipe.html#receipe">Receipes</a>
+  <a href="https://github.com/cool31/w3schools_project/main/travelersdelight.html#travelersdelight">Travelers</a>
+  <a href= "https://github.com/cool31/w3schools_project/main/blog.html#blog">Blog</a>
+   <a href= "https://github.com/cool31/w3schools_project/main/portfolio.html#portfolio">Portfolio</a>
+<a href= "https://github.com/cool31/w3schools_project/main/review.html#review">Review</a>
+<a href= "https://github.com/cool31/w3schools_project/main/eve.html#eve">Events</a><br>
+<!--<a href= "https://github.com/cool31/w3schools_project/main/hospital.html#hospital>Hospital</a>-->
+</div>
+<br>
+<div id = "offplane">
+  <button class = "ticket" onclick="planeland()">Click Here</button>  
+
+<h1>HELEN INDUSTRIES, CHICAGO</h1>
+<h2><a href="tel: +91 7907713977">Call/Helpline</a><br><a href = "emailto:info@imagiobox.com?&cc=info@imagiobox.com&bcc=info@imagiobox.com?subject=imagio+subject&body=Message+text">
+Send Email</a></h2>
+
+<h2>ABOUT US</h2><br><p> <mark>Established in 1990</mark>, heeding to various <b><i>services related to 
+catering, accommodation, party shows, dining out famous countries receipes,
+dance clubs, outdoor activities, indoor activities, indulding in healthy competitions, 
+sports activities, mountaineering, river rafting, snowboarding activities and lots of 
+other enjoyable activities</i></b>.  We have over <strong>500 staff dedicated</strong> to meet customers 
+demands with up-to-date observations and information with technology.</p>
+
+<hr>
+<p><mark>Our motto</mark> is customer's satisfaction with dedicated services throughout the year. Enjoy your stay
+with us.</p>
+
+<script>
+function planeland() {
+  document.getElementById("deza").innerHTML =  Date();
+  document.getElementById("trave").style.width = "70px";
+  document.getElementById("offplane").style.marginLeft = "70px";
+}
+
+function planetarmac() {
+  document.getElementById("trave").style.width = "0";
+  document.getElementById("offplane").style.marginLeft= "0";
+}
+</script>
+&copy; <mark>All Rights Reserved</mark>
+</body>
+</html>

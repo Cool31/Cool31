@@ -1,0 +1,761 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>Travelers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel = "preconnect" href = "https://github.com/cool31/w3schools_project/main/../">
+<link rel = "prerender" href = "https://github.com/cool31/w3schools_project/main/../">
+<link rel = "prefetch" href = "https://github.com/cool31/w3schools_project/main/../">
+<link rel = "DNS-Prefetch" href = "https://github.com/cool31/w3schools_project/main/../">
+
+<script src="path/to.js"></script>
+<script src="https://kit.fontawesome.com/a86d37796.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+*{
+box-sizing: border-box;
+}
+
+.samt {
+
+position: relative;
+
+width: 1280px;
+height: auto;
+
+margin: auto;
+border: 26px solid orange;
+border-top-width: 60px;
+
+border-bottom-width: 60px;
+
+border-radius: 86px;
+
+background-image: url("https://github.com/w3schools_projects/main/scenary/sea-g2a6296896_1280.jpg");
+background-repeat: no repeat;
+background-size: cover;
+}
+
+.container{
+position: absolute;
+left: 550px;
+width: 520px;
+height: 450px;
+background-color: red;
+border: 5px solid yellow;
+border-style: dotted;
+border-radius: 60%;
+overflow: scroll;
+}
+
+.contan{
+position: relative:
+left: 440px;
+width: 470px;
+height: 450px;
+background-color: red;
+border: 5px solid yellow;
+border-style: dotted;
+border-radius: 60%;
+overflow: scroll;
+}
+
+.tang img, .bang  img{
+width: 730px;
+height: 250px;
+}
+
+.wikipedia{
+position: absolute;
+top: 0;
+right: 170px;
+width: 13px;
+height: 5px;
+font-size: 12px;
+~webkit-transform: skewY(16deg);
+transform: skewY(16deg);
+}
+
+.tang, .bang{
+display: none;
+}
+
+.tang, .bang{
+display: inline-block;
+transition: 0.5s ease;
+}
+
+.active:hover, .tang: hover, .bang:hover{
+background-color: coral;
+}
+
+a[href$="text"]{
+ background-color: inherit;
+ text-decoration: underline;
+ border: 10px solid yellow; 
+}
+
+.company{
+width: 310px;
+height: 140px;
+border: 5px solid purple;
+perspective: 2000px;
+background-color: orange;
+color: white;
+}
+
+.address{
+position: relative;
+width: auto;
+height: auto;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+}
+
+.company:hover, .back{
+transform: rotateY(190deg);
+}
+
+.view, .back{
+width: auto;
+height: auto;
+position: absolute;
+}
+
+.view:hover{
+transform: rotateX(170deg);
+background-color: black;
+color: white;
+backface-visibility: hidden;
+}
+
+#bonus{
+position: absolute;
+top: 80px;
+left: 320px;
+width: 270px;
+height: 130px;
+overflow: scroll;
+background-color: yellow;
+color: orange;
+}
+
+button{
+background-color: indigo;
+color: orange;
+border: 10px solid green;
+font-size: 20px;
+}
+
+.grid-container {
+  width: 750px;
+  display: grid;
+  grid-row-gap: 5px;
+  grid-column-gap: 1px;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+  justify-content: space-evenly;
+  align-content: space-between;
+}
+
+.grid-container > div{
+  background-color: orange;
+  text-align: center;
+  padding: 10px;
+  font-size: 10px;
+  border-bottom-color: red;
+  border-bottom-style: double;
+  border-bottom-width: thick;
+  border-left-style: ridge;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+   border-bottom-right-radius: 30px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 10px solid rgba(0, 0, 0, 0.8) dashed;
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+}
+
+#marc
+{
+height: 160px;
+width: 320px;
+border: 10px solid black;
+background-color: pink;
+transform: skewX(180deg);
+position: absolute;
+left: 600px;
+top: 10px;
+color: white;
+}
+
+#desc
+{
+position: relative;
+left: 630px;
+top: -70px;
+font-size: 14px;
+height: 170px;
+width: 320px;
+border: 10px solid green;
+background-color: orange;
+transform: skewX(20deg);
+color: white;
+}
+
+#subs{
+height: 10px;
+width: 400px;
+transform: translate(20px, -620px);
+background-color: dodgerblue;
+color: pink;
+border: 10px solid green;
+border-radius: 30px;
+}
+
+.chat{
+height: 20px;
+width: 240px;
+position: absolute;
+top: 110px;
+right: 10px;
+border: 10px border red;
+border-style: dashed;
+background-color: pink;
+color: white;
+}
+
+.show{
+display: block;
+}
+
+p:last-child{
+     font-size: 2em;
+color: yellow;
+}
+
+button, #sele, #seles, #selame, 
+#stele, #sela{
+color: white;
+background-color: coral;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+
+<body>
+<div class="samt">
+
+<h1 style="text-shadow: -2px 2px 3px red, 5px -4px 2px blue;">&#9876; HEAVEN ON EARTH's PARADISE</h1>
+
+
+<div class = "company">
+   <div class = "address">
+      <div class  = "view">
+        <h5 style=" font-size: 15px; float: left;">&#9772; Marcus Tourism Pvt Ltd
+         12th Street, HillTop Cottage, Ohio 69056<br>Mob: 630-901-218</h5>
+</div>
+            <div id = "back">
+         <p>Route Map</p>
+      </div>
+    </div>
+ </div>
+
+<div id="bonus">
+  <h1>&#128526;Festival Bonaza - Honeymoon Offer @ $150<br> Offer valid 2 months only<br>Use coupon to book tickets.
+Just couple of tickets to offer.  Buy now.</h1>
+   <h2>Coupon Code: B98NZ70 &#128525;</h2>
+</div> 
+
+<div id ="marc">
+Marcus is well established reputed firm since 1990 catering to tourist's demands and outlook with dedicated
+service to catering, accn and tour packages run by its own staff who are dedicated and loyal to offering best 
+services in tourism.<br>
+<a href="tel: 120-230-908" style = " width: 20px;border: 10px solid red; color: white;">&#9742; Helpline</a>
+<a href="tel: 690-300-009" style = " width: 20px;border: 10px solid red; color: white;">&#9742; Emergency Services</a>
+</div>
+
+<div id="desc">
+Kashmir is one of the most exotic places or called as <strong>"Heaven on Earth"</strong> with millions of tourists
+round the year.  Plenty of activities to enjoy and view scenary of nature with plentiful delicacies to offer with 
+mouth watering dishes and best place to visit ever in the world.<br><br>
+
+<a href="mailto:example@example.com?cc=john@example.com&bcc=jane@example.com?subject=Example+
+subject&body=Message+text" style="color: white;">&#9993; Send email</a>
+<a href="tel: 658-98-654" style = " width: 20px;border: 10px solid red; color: white;">&#9742; Call To Book Tour</a>
+</div>
+
+<div class="wikipedia">
+<input type = "button" id = "samefunc" onclick= "smooth()" style = "background-color: indigo;
+color: white; border: 10px solid green;" value="Jammu & Kashmir- Click" /></div>
+
+<div class='container'>
+ <div class='tang'>
+ <img src = 'https://github.com/cool31/w3schools_project/main/scenary/badacsony_lake_balaton_landscape.jpg' alt = 'no image'>
+<b><button class="btn"><i ji class="fa fa-download"></i> Download</button>
+<br>Image 1/21</b>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/colorful_landscape.jpg' alt = 'no image'>
+<br/><b>Image 2/21</b>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/evening_landscape.jpg' alt = 'no image'>
+<br/><b>Image 3/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/kashmir_landscape_scenic.jpg' alt = 'no image'>
+<b>Image 4/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/landscape.jpg' alt = 'no image'>
+<b>Image 5/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/landscape.jpg' alt = 'no image'>
+<b>Image 6/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/landscape.jpg' alt = 'no image'>
+<b>Image 7/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/landscape.jpg' alt = 'no image'>
+<b>Image 8/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/landscape.jpg' alt = 'no image'>
+<b>Image 9/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/landscape_and_bridge.jpg' alt = 'no image'>
+<b>Image 10/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/landscape_from_a_plane.jpg' alt = 'no image'>
+<b>Image 11/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/landscape_on_canvas.jpg' alt = 'no image'>
+<b>Image 12/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/mountain_alpine_italy_landscape.jpg' alt = 'no image'>
+<b>Image 13/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/mountains_mountain_landscape_hiking.jpg' alt = 'no image'>
+<b>Image 14/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/people_and_landscape.jpg' alt = 'no image'>
+<b>Image 15/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/snowy_landscape.jpg' alt = 'no image'>
+<b>Image 16/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/spring_landscape.jpg' alt = 'no image'>
+<b>Image 17/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/spring_landscape.jpg' alt = 'no image'>
+<b>Image 18/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/sunset_landscape.jpg' alt = 'no image'>
+<b>Image 19/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/the_english_landscape.jpg' alt = 'no image'>
+<b>Image 20/21</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/the_english_landscape.jpg' alt = 'no image'>
+<b>Image 21/21</b><br/>
+</div>
+</div>
+
+<div class='contan'>
+<div class='bang'>
+ <img src = 'https://github.com/cool31/w3schools_project/main/scenary/the_english_landscape.jpg' alt = 'no image'>
+<b>Image 1/13</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/the_english_landscape.jpg' alt = 'no image'>
+<b>Image 2/13</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/winter_landscape.jpg' alt = 'no image'>
+<b>Image 3/13</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/background_landscape.jpg' alt = 'no image'>
+<b>Image 4/13</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/nature-g840f6ca96_1920.jpg' alt = 'no image'>
+<b>Image 5/13</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/pexels-gandhar-thakur-5097161.jpg' alt = 'no image'>
+<b>Image 6/13</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/pexels-imad-clicks-5861250.jpg' alt = 'no image'>
+<b>Image 7/13</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/pexels-imad-clicks-5868644.jpg' alt = 'no image'>
+<b>Image 8/13</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/pexels-imad-clicks-9732892.jpg' alt = 'no image'>
+<b>Image 9/13</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/pexels-shahid-sultan-4689993.jpg' alt = 'no image'>
+<b>Image 10/13</b><br/>
+<img src = 'https://github.com/cool31/w3schools_project/main/scenary/pexels-shahid-sultan-5372545.jpg' alt = 'no image'>
+<b>Image 11/13</b><br/>
+</div>
+</div>
+
+<form id = "subs">
+<fieldset>
+<legend>SUBSCRIBE</legend>
+FULL NAME:<br>
+<input type= "text" id = "name" value = ""><br>
+EMAIL ID:<br>
+<input type= "text" value = ""><br>
+SUBSCRIPTION DT:<br>
+<input type="datetime-local" value = " ">
+<button onsubmit = "ferr()">Submit</button>
+</fieldset>
+</form>
+
+<button class = "Tour1"><a href ="#">Gulmarg</a></button>
+
+<button class = "Tour2"><a href ="#">Dal Lake</a></button>
+
+<button class = "Tour3"><a href ="#">Nubra Valley</a></button>
+
+<button class = "Tour4"><a href ="#">Tso Moriri Lake</a></button>
+
+<button class = "Tour5"><a href ="#">Leh Palace</a></button>
+
+<button class = "Tour6"><a href ="#">Chadar Trek</a></button>
+
+<button class = "Tour7"><a href ="#">Khardung La</a></button>
+
+<button class = "Tour8"><a href ="#">Magnetic Hill</a></button>
+
+<button class = "Tour9"><a href ="#">Alehi Monastry</a></button>
+
+<button class = "Tour10"><a href ="#">Hemis National Park</a></button>
+
+<button class = "Tour11"><a href ="#">Spituk Monastry</a></button>
+
+<button class = "Tour13"><a href ="#">Shalima Bagh Mughal Garden</a></button>
+
+<button class = "Tour14"><a href ="#">Nishat Bagh</a></button>
+
+<button class = "Tour15"><a href ="#">Tulip Gardens</a></button>
+
+<label for ="Visits" name = "Traveler">
+<select  id ="sele" onclick ="places(this)">
+<option value="Nigeen">Nigeen Lake</option>
+<option value= "kargil">Kargil City</option>
+<option value = "nishan">Nishan Garden</option>
+<option value="mulbeik">Mulbeik Monastry</option>
+<option value="drass">Drass Valley</option>
+<option value= "kargil">Kargil War Memorial</option>
+<option value ="cablecar">Gulmarg Gondola</option>
+<option value="gulmarg">Gulmarg Biosphere Reserve</option>
+<option value="straw">Strawberry Valley</option>
+<option value="seven">Seven Springs</option>
+<option value = "golf">Gulmarg Golf Course</option>
+<option value= "zoji">Zoji La</option>
+<option value = "zero">Zero Point</option>
+<option value = "glacier">Thajiwas Glacier</option>
+<option value = "baltal">Baltal Valley</option>
+<option value = "krishankari">Krishankari Lake</option>
+<option value = "pulwama">Pulwama</option>
+<option value = "rajouri">Rajouri</option>
+<option value = "patnitop">Patnitop</option>
+<option value= "kupwara">Kupwara</option>
+<option value = "akhnoor">Akhnoor</option>
+<option value = "yousmarg">Yousmarg</option>
+<option value = "pahalgam">Pahalgam</option>
+<option value ="aru">Aru Valley</option>
+<option value="pangong">Pangong Lake</option>
+<option value= "manasbal">Manasbal Lake</option>
+<option value="ladakh">Ladakh</option>
+<option value= "leh">Leh</option>
+<option value="sonamarg">Sonamarg</option>
+<option value="other">Other 20 spots more</option>
+</select>
+</label>
+
+<label name = "Travel">
+<select id="seles" onclick = "enjoy()">
+<option>Shikara Ride @ $2</option>
+<option>Houseboat Stay with facilities</option>
+<option>Gondola Cable Car Ride</option>
+<option>Gondola via Koongdori @ $8</option>
+<option>Gondola via Apharwat Peak @ $10</option>
+<option>Gondola via Mary Shoulder [Chair Lift] @ $5</option>
+<option>Gulmarg Golf Club @ $16</option>
+<option>Pony Ride Excursions - Sonamarg</option>
+<option>Old Srinagar Heritage Walk</option>
+<option>Wildlife Tour</option>
+</select>
+</label>
+
+<label name = "Travelling">
+<select id="selame" onchange = "raft(this)">
+<option>River Rafting</option>
+<option>Short Lidder River Rafting - 3 km</option>
+<option>Medium Sindh River Rafting - 8 km</option>
+<option>Long Sindh River Rafting - 28 km</option>
+<option>Paragliding</option>
+<option>Trekking</option>
+<option>Skiing and Snowboarding</option>
+<option>Mountain Biking</option>
+<option>Hot Air Ballooning</option>
+<option>Golfing</option>
+<option>Camel Safari</option>
+<option>Camping</option>
+<option>Ladakh Buddist Monasteries</option>
+<option>Hemis Monastery</option>
+<option>Thiksey Monastery</option>
+<option>Likir Monastery</option>
+</select>
+</label>
+
+<form>
+<label name="lunch">
+<select style ="background-color: coral; color: white;" onclick= "lunchtime(this)">
+<option value = "Rogan Josh - Lamb Mutton" >Rogan Josh - Lamb Mutton</option>
+<option value = "Modur Pulav">Modur Pulav</option>
+<option value = "Matschgand - Minced meatballs" >Matschgand - Minced meatballs</option>
+<option value = "Yakhni or Yogurt Lamb Curry">Yakhni or Yogurt Lamb Curry</option>
+<option value = "Dum Olav - Potato + mixed veg">Dum Olav - Potato + mixed veg</option>
+<option value = "Kashmiri Muji Gaad - Fish">Kashmiri Muji Gaad - Fish</option>
+<option value = "Aab Gosht - Mutton dishes">Aab Gosht - Mutton dishes</option>
+<option value = "Goshtaba - Minced Mutton">Goshtaba - Minced Mutton</option>
+<option value = "Lyodur Tschaman -  Veggie">Lyodur Tschaman -  Veggie</option>
+<option value = "Momos - Tibetian Delicacy">Momos - Tibetian Delicacy</option>
+<option value = "Thukpa - Veg Soup">Thukpa - Veg Soup</option>
+<option value = "Skyu - Wheat + meat dish">Skyu - Wheat + meat dish</option>
+<option value = "Khambir - Butter Tea + mixed">Khambir - Butter Tea + mixed</option>
+<option value = "Herbal Tea - Mixed Ingredients" >Herbal Tea - Mixed Ingredients</option>
+<option value = "Paba - Peas + Wheat + barley">Paba - Peas + Wheat + barley</option>
+<option  value = "Tangdur - Buttermilk + veg">Tangdur - Buttermilk + veg</option>
+<option value = "Thenthuk - Noodle Soup Dish">Thenthuk - Noodle Soup Dish</option>
+<option value = "Tibetan Butter Tea">Tibetan Butter Tea</option>
+<option value = "Kashmiri Cuisine - Kashmiri Kahwa (spl delicious tea)">Kashmiri Cuisine - Kashmiri Kahwa (spl delicious tea)</option>
+<option value = "Cuisine - Nadroo Yakhni (yogurt based Kashmiri curry + lotus stems">Cuisine - Nadroo Yakhni (yogurt based Kashmiri curry + lotus stems</option>
+<option value = "Cuisine - Paneer Chaman - Fried Paneer + Tomato Sauce + Spices + Fennel Seeds Pwdr">Cuisine - Paneer Chaman - Fried Paneer + Tomato Sauce + Spices + Fennel Seeds Pwdr</option>
+<option value = "Cuisine - Dun Aloo">Cuisine - Dun Aloo</option>
+</select>
+</label>
+</form>
+
+<label name = "Shopping">
+<select id = "stele">
+<option>Exquisite Kashmiri Handlooms</option>
+<option>Pashmina Shawls</option>
+<option>Antique Copperware</option>
+<option>Antiques - Samovars</option>
+<option>Antiques - Namda Handwoven carpets</option>
+<option>Antiques - Samovars</option>
+<option>Ferins Garments</option>
+<option>Expensive Doda Sapphire</option>
+</select>
+</label>
+
+<label name = "Timings of Visit">
+<select style ="background-color: coral; color: white;" >
+<option>Timings of Visit</option>
+<option>Srinagar - Apr - Oct</option>
+<option>Gulmarg - Oct - June</option>
+<option>Pahalgam - All 12 months</option>
+<option>Patnitop - All 12 months</option>
+<option>Sonamarg - May to Oct</option>
+<option>Aru Valley - May - Oct</option>
+<option>Anantnag - May - Oct</option>
+<option>Yusmarg - May - Oct</option>
+<option>Jammu - Sept - March</option>
+<option>Bhaderwah - May - Oct</option>
+<option>Sanasar - Apr - June</option>
+<option>Tarsar Marsar Trek - Check Out</option>
+<option>Kishtwar National Park - May - Oct</option>
+<option>Khilanmarg - May - Sept</option>
+<option>Dachigam National Park - Apr - Oct</option>
+<option>Baltal - May - Sept</option>
+<option>Pulwama - Yearly</option>
+<option>Hemis - Apr - June</option>
+<option>Dras - June - Sept</option>
+<option>Lamayuru - Apr - June</option>
+<option>Kargil - June - Sept</option>
+<option>Nubra Valley - June - Sept</option>
+</select>
+</label>
+
+<label name = "Tour Packs" id = "money">
+<select id = "sela">
+<option>Tour Packages</option>
+<option>Srinagar @$93 - 4D3N per head</option>
+<option>Kashmir Honeymoon @35% off - $185 - 4 days</option>
+<option>Manali Leh Manali Jeep Safari - $450 per head - 12D11N</option>
+<option>Romantic Escapade to Kashmir Valley - $300 - 6D5N</option>
+<option>Srinagar-Gulmarg-Pahalgam Tour @ $186 - 4D3N</option>
+</select>
+</label>
+
+<label name = "Geography" id = "weather">
+<select style =" background-color: coral; color: white;">
+<option> Geograhical Location, Weather and Season</option>
+<option>Located in Himalayas, India.  Spring - Mar - May 2nd week</option>
+<option>Summer - May - August</option>
+<option>Good weather during Summer and Spring - Best Time to visit</option>
+<option>Cold Region, Snow-capped mountains, Freezing cold river streams</option>
+<option>Travel to Srinagar Airport</option>
+<option> Book accn & boarding, expenses extra, provided room heaters</option>
+</select>
+</label>
+
+<p id="luck" style="text-shadow: -2px 2px 3px red, 5px -4px 2px white; font-size: 27px; border: 5px solid yellow;"></p>
+<br>
+<div class="grid-container">
+  <div class="grid-item"><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google</a></div>
+  <div class="grid-item"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></div>
+  <div class="grid-item"><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></div>
+  <div class="grid-item"><a href="https://www.mozila.org" target="_blank" rel="noopener noreferrer">Mozila</a></div>
+  <div class="grid-item"><a href="https://www.gmail.com" target="_blank" rel="noopener noreferrer">Gmail</a></div>
+  <div class="grid-item"><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">Youtube</a></div>
+  <div class="grid-item"><a href="https://www.goo.gl" target="_blank" rel="noopener noreferrer">Goo</a></div>
+  <div class="grid-item"><a href="https://docs.google.com" target="_blank" rel="noopener noreferrer">Docs</a></div>
+  <div class="grid-item"><a href="https://amazon.com" target="_blank" rel="noopener noreferrer">Amazon</a></div>
+  <div class="grid-item"><a href="https://paypal.com" target="_blank" rel="noopener noreferrer">Paypal</a></div>
+</div>
+
+<form class = "chat">
+<fieldset>
+<legend>Chat Message Box</legend>
+FULL_NAME:<br>
+<input id = "text" name ="fname" value = " "><br>
+MESSAGE:<br>
+<textarea row= "5" column = "35"></textarea><br>
+COUPON (if yes, copy & paste):<br>
+<input type = "number" id = "coup" value = "" />
+<button>Submit</button>
+</fieldset>
+</form>
+
+<form id= "travel">
+<script>
+alert("Tourist Arrival.....Enter Customer Details.");
+alert("For bookings, advance pay of 50% via Paypal to book tour.  Welcome to Paradise on Earth.  Enjoy your stay.  Assistance always at hand.  Thank You.");
+var xp = [];
+var aa, bb, cc, dd, ee;
+aa = xp.push(prompt("Customer Name:"));
+bb = parseInt(prompt("Mobile No:"));
+cc = xp.push(prompt("Destination:"));
+dd = xp.push(prompt("Inn Name:"));
+ee = (+prompt("Arrival Dt:"));
+
+var xx = xp.toString(aa);
+xp.push(bb);
+var yy = xp.toString(bb);
+var zz = xp.toString(dd);
+xp.push(ee);
+
+document.body.addEventListener("click", smooth);
+
+document.body.addEventListener("change", hangover);
+</script>
+</form>
+
+<p id = "deeps"></p>
+
+<script>
+
+var i = 0;
+
+var txt = "Heaven on Earth is a wonderland tourist spot for honeymoon with stunning nature beyond imagination. One of the most tourist attractions the world has ever known";
+
+
+
+
+function smooth()
+
+{
+
+if (i < txt.length)
+{
+document.getElementById("luck").innerHTML += txt.charAt(i);
+i++;
+
+setTimeout(smooth, 50);
+ 
+<!--event.stopImmediatePropagation();-->
+ }
+}
+</script>
+
+
+<script>
+function enjoy()
+{
+var m = document.getElementById("seles").selectedIndex;
+var n =  document.getElementById("seles").options;
+alert("Your preferred Joy Ride Choice is:" + " " + n[m].text);
+}
+
+var pref ="";
+function places(prefplaces)
+{
+pref = prefplaces.options[prefplaces.selectedIndex].text;
+alert("Preferred location:" + pref);
+}
+
+var wpm = "";
+function raft(boat)
+{
+var wpm = boat.value;
+alert("Entertainment:" + wpm);
+console.log(wpm);
+}
+
+function  lunchtime(wow)
+{
+wow.preventDefault();
+let smack = document.querySelectorAll("select");
+let fulfil = [];
+smack.forEach(input => {fulfil.push(input.value);
+})
+return smack;
+alert("Selected Cuisine:" + smack);
+}
+
+var wwp = document.getElementById("stele").value;
+alert("Purchased from shop: " + wwp);
+
+var i;
+function hangover()
+{
+var hang = document.querySelectorAll("#subs");
+for(i =0; i < hang.length; i++)
+{
+hang[i].toUpperCase();
+ }
+}
+
+var sub, rps, xts;
+function ferr()
+{
+var sub = document.forms[0];
+sub.length = document.getElementById("subs");
+for(rps = 0; rps < sub.length; rps++)
+{
+ xts= sub.elements[rps].value + "<br>";
+ }
+}
+</script>
+
+<footer>
+<p>&copy; All rights reserved.</p>
+</footer>
+</body>
+</html>
+   

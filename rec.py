@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-/*for uploading file to spaces, used as TXT or html*/
+
 import mysql.connector
 import datetime
 
 db = mysql.connector.connect(
     host = "localhost",
-    user = "username",
-    password = "password",
-    database = "mydata")
+    user = "busibusi",
+    password = "ajun7@@#26&wtx",
+    database = "groceey")
 
 x = db.cursor()
 
-GRANT ALL ON *.* TO 'username' @ 'localhost' WITH GRAND OPTION
+GRANT ALL ON *.* TO 'busibusi' @ 'localhost' WITH GRAND OPTION
 
 i = 1
 
@@ -24,13 +22,10 @@ x.execute("CREATE TABLE ship (id int AUTO_INCREMENT PRIMARY KEY ZEROFILL UNSIGNE
      lname CHAR(30),
      joineddt date(), dob date(), address VARCHAR(60), Aqual VARCHAR(60), tqual VARCHAR(60),  occupation  CHAR(25), dept CHAR(10), salary INT(10), deduct INT(6), nethome INT(10), mobilenumber INT(10), emerno INT(10), emername CHAR(25), backgroundver CHAR(20), backgrounddate date(), health CHAR(10), emplstatus CHAR(20), emplgrounds CHAR(30), 6,2), promotion CHAR(15), prevemployer VARCHAR(40), current pay DECIMAL(6,2)") 
      
-x.execute("CREATE TABLE purchase(id int AUTO_INCREMENT PRIMARY KEY ZEROFILL UNSIGNED, invoicenmbr int(15), invoicedate DATE(), retailername CHAR(60), mobilenumber VARCHAR(20), addr VARCHAR(130), grapes INT(3), cheery INT(3), oranges INT(3),apples INT(3),pineapple INT(3),guava INT(3),grapesgreen INT(3), banana INT(3), peaches INT(3), apricot INT(3), dryfruits INT(3), addedstock CHAR(20), addedprice DECIMAL(6,2),
+x.execute("CREATE TABLE stock_purchase(id int AUTO_INCREMENT PRIMARY KEY ZEROFILL UNSIGNED, invoicenmbr int(15), invoicedate DATE(), retailername CHAR(60), mobilenumber VARCHAR(20), addr VARCHAR(130), grapes INT(3), cheery INT(3), oranges INT(3),apples INT(3),pineapple INT(3),guava INT(3),grapesgreen INT(3), banana INT(3), peaches INT(3), apricot INT(3), dryfruits INT(3), addedstock CHAR(20), addedprice DECIMAL(6,2),
     addedqty int(5), discount DECIMAL(6,2), totalkgs INT(3), total amt DECIMAL(10,2), grand total DECIMAL(10,2)")
     
-x.execute("CREATE TABLE anime (id int AUTO_INCREMENT PRIMARY KEY ZEROFILL UNSIGNED, name VARCHAR(100), email VARCHAR(50), PWD VARCHAR(30)")
- ")
-
-x.execute("SHOW TABLES")
+ x.execute("CREATE TABLE anime(id int AUTO_INCREMENT PRIMARY KEY ZEROFILL UNSIGNED, name varchar(70), email varchar(140), pwd varchar(26))") 
    
 #Adding multiple records on input
 z = INSERT INTO anime (name, email, pwd, fora) VALUES (%s, %s, %s)
@@ -93,4 +88,3 @@ print("Total available records in database has reached 40000, to continue...")
 i += 1
 continue
 print("Further adding records....")
-</html>

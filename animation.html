@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<style>
+    
+div {
+  width: 200px;
+  height: 120px;
+  border: 1px solid yellow red;
+  position: relative;
+  background-color: orange;
+  ~webkit-animation: myfirst 5s infinite;
+  ~webkit-animation-delay: 6s;
+  ~webkit-animation-direction: alternate; 
+  position: absolute: left: 10px; top: 40px;
+   animation: mymy 5s infinite;
+   animation-delay: 3s;
+   animation-direction: alternate;
+  
+  }
+
+@~webkit-keyframes myfirst
+{
+from{left: 0px;}
+to{left: 300px;}
+}
+
+@keyframes mymy
+{
+from{left: 0px;}
+to{left: 300px;}
+}
+
+button {
+    color: brown;
+}
+</style>
+</head>
+
+<body>
+<button onclick = "myfunction()">Click Fillmodeforwards</button>
+<button onclick = "myfunc()">Click Fillmodebackwards</button>
+<button onclick = "myfun()">Click Fillmodenone</button>
+<button onclick = "myfu()">Click Fillmodeboth</button>
+
+<script>
+function myfunction()
+{
+document.getElementById("mydiv").style.AnimationFillMode = "forwards";
+document.getElementById("mydiv").style.animationFillMode ="forwards";
+}
+
+function myfunc()
+{
+document.getElementById("mydiv1").style.AnimationFillMode = "backwards";
+document.getElementById("mydiv1").style.animationFillMode = "backwards";
+}
+
+function myfun()
+{
+document.getElementById("mydiv2").style.AnimationFillMode = "none";
+document.getElementById("mydiv2").style.animationFillMode = "none";
+}
+
+function myfu()
+{
+document.getElementById("mydiv3").style.AnimationFillMode = "both";
+document.getElementById("mydiv3").style.animationFillMode = "both";
+}
+</script>
+
+<div id = "mydiv">Animation<div>
+<div id = "mydiv1">Program<div>
+<div id = "mydiv2">Modelling</div>
+<div>
+<div id = "mydiv3">Styles<div>
+</body>
+</html>
