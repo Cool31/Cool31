@@ -4,7 +4,7 @@
 <title>Online Grocery Store</title>
 <meta name="viewport" content="width=device-width initial-scale =1">
 
-<link rel="preconnect" href="https://github.com/cool31/cool31/main">
+<link rel="preconnect" href="https://github.com/cool31/cool31/main/.../">
 
 <link rel="prerender" href="https://github.com/cool31/cool31/main/../">
 
@@ -30,8 +30,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
 
-
-<!--To cross-check export & import-->
 <script src ="https://github.com/cool31/cool31/main/june.js">
  export default custdtls;   
 </script>
@@ -73,15 +71,16 @@ row-gap:30px;
 
 #myta tr, td, button{
 
-background-color: blue;
+background-color: orange;
+color:white;
 
 display: inline-block;
 }
 
-input{
+input, select{
 
 background-color: green;
-color: coral;
+color: white;
 }
 
 
@@ -169,7 +168,7 @@ width: 83.33%;
 
 
 #dist, #desp, #weight{
-width: 20rem;
+width: 30rem;
 height: 15rem;
 border: 20px solid red;
 display: inline-block;
@@ -198,8 +197,6 @@ overflow: scroll;
 
 
 <body>
-<a href="https://github.com/cool31/cool31/main/junetransfer.html#">Data Transfer Sample</a>
-
 <a href="https://github.com/cool31/cool31/main/onlinepricescanpay.html#onlineprices">Price List  Scan Pay</a>
 
 <a href="https://github.com/cool31/cool31/main/bloggers.html">Blog</a>
@@ -274,22 +271,18 @@ GEORGIA GROCERY STORES</b></legend>
 </td>
 <td><b><i>Dry Fruits:</i></b><input id="tunes" name = "order[]"  value=" " style="width: 50px;" /></td>
 <td><input type="file" name="recorder" id="audio" name = "order[]" multiple />
-</td>
+</td><hr>
+<td><input type = "button" onclick="myfunction()" style="color:white;" value ="Click - View Customer Order" /></td>
+
+<td>
+ <button type="submit" value="Ensure home address and issues in recorded audio before uploading;"
+style="color:white;">Submit</button></td>
+
+<td><input type = "button" onclick="shiptransfer(this)" style="color:white;" value ="Click - Two Way Shipping" /></td>
+
+<td><input type ="button" onclick= "Total()" value = "Authorized Personnel Only"  style="color: white;" /></td>
 </tr>
-</table>
 </fieldset>
-
-</form>
-
-<form>
-<table>
-<tr>
-<td><input type = "button" onclick="myfunction()" style="color:red;" value ="Click - View Bill" /></td>
-<td><button type="submit" value="Ensure home address and issues in recorded audio before uploading;"
-style="color:red;">Submit</button>
-</td>
-<td><input type ="button" onclick= "Total()" value = "Authorized Personnel Only"  style="color: red;" /></td>
-</tr>
 </table>
 </form>
 
@@ -306,8 +299,7 @@ Click to Check Prices</a><br />
 
 <script>
 var i, order, cost,  xxp, yy, zz;
-alert("Minimum purchase orders@Rs.3,500 to avail discount offers....File updation in progress");
-
+alert("Data value Transfer between 2 files");
 
 function myfunction()
 {
@@ -343,6 +335,7 @@ drynet = parseFloat(xxp[18].value);
 netwt = [grapenet, cherrynet, orangenet, applenet, pinenet, guavanet, greennet, banananet, peachnet, aprinet, cashnet, drynet];
 
 totalwt = netwt.filter(fund);
+
 function fund(value, index, array)
 {
 return value;
@@ -404,7 +397,7 @@ var charge = parseFloat(xxp[5].value);
 var custo = frui.push(xxp[2].value);
 var customer = frui.toString(custo);
 var orddt = (parseInt(xxp[0].value));
-var ordno = (parseFloat(xxp[1].value));
+var ordno = (parseInt(xxp[1].value));
 
 function myfunda(total, value, index, array)
 {
@@ -444,8 +437,6 @@ var custdtls =[];
 
 var custo, customer, orddt, ordno, mobileno, addressee, addr, emp, employ;
 
-
-
 orddt = (xxp[0].value);
 
 
@@ -456,24 +447,17 @@ custo = custdtls.push(xxp[2].value);
 
 customer = custdtls.toString(custo);
 
-
-
 mobileno = (parseInt(Number(xxp[3].value)));
 
 addressee = custdtls.push(xxp[4].value);
 
 addr = custdtls.toString(addressee);
 
-
 emp = custdtls.push (xxp[6].value);
 
 employ = custdtls.toString(emp);
   
-
-
 custdtls = [customer, orddt, ordno, mobileno, addr, employ];
-
-
 
 document.getElementById("desp").innerHTML = "Customer Shipping Details:" + "<br>" +
 "Customer Name:" + "" + customer + "<br>" +
@@ -491,8 +475,27 @@ document.getElementById("weight").innerHTML = "Net Wt Each Product:" + "<br>" +
 "Peaches:" + ""  + peachnet + "<br>" + "Apricots:" + "" + aprinet +"<br>" +
 "Cashewnuts:" + ""  + cashnet + "<br>" + "Dry Fruits:" + "" + drynet + "<br>" +
 "Total Net Weight;" + " " +finalwt;
-}
 
+var custt= cost;
+window.location.href ="custorder.html?data" + custt;
+
+
+
+function shiptransfer(xt)
+{
+/*????*/
+xt.preventDefault; xt.stopImmediatepropogation;
+
+var custdetails= custdtls;
+window.location.href ="ship.html?data" + custdetails;
+
+var cus = jQuery ("#bulk").val();
+jQuery.load = ("ship.html", function()
+{
+jQuery('#forma').html(custdtls);
+});
+ }  
+} 
 </script>
 
 <script>
@@ -508,7 +511,7 @@ window.history.back();
 
 function Total()
 {
-
+/* To do later*/
 document.getElementById("totalsales").innerHTML = "";
 }
 </script>
