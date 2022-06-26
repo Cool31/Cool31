@@ -1,0 +1,14 @@
+ <script>
+  function gen()
+  {
+   var x ='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+   var y = x.length;
+   var i, txt ="";
+   for(i=0; i < 6; i++)
+   {
+   txt += x[Math.floor(Math.random() * y)];     
+  }
+   return txt;
+ } document.getElementById("goss"). innerHTML = gen();    
+ </script>  
+

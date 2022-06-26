@@ -1,0 +1,8 @@
+<script>
+var xp = angular.module("myapp", []);
+xp.controller('mycontrol', function($scope, $http){
+    $http.get('generateotp.html', 'emailtosend.js') .then function (response){
+ $scope.welcome = response.data; 
+});
+});
+</script>
