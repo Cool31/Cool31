@@ -48,19 +48,9 @@
 
 <script src ="threecurrencyconvert.js"></script>
 
-<!--To cross-check export & import-->
-<script src ="https://github.com/cool31/cool31/main/june.js">
- export default custdtls;   
+<script src ="https://github.com/cool31/cool31/main/june.js"> 
 </script>
-
-<script src ="bankresponse.html"></script>
-
-<script type ="module">
-export default custdtls;
-</script>
-
 <style>
-
 #myta tr, td{
 
 border: 10px solid yellow;
@@ -282,8 +272,8 @@ style="color:red;">Submit</button>
 </table>
 </form>
 
-<form id ="expenses" action="tokensender.js" method="post">
- <fieldset>
+<form id ="expenses" method ="post" action="tokensender.js">
+    <fieldset>
  <p>CARD DETAILS</p>
 Credit Card No:<input type="number" id="card" placeholder= "Enter 13 to 19 digits without spaces" value="34" required/>
  <hr>
@@ -306,22 +296,22 @@ Choose Card Issuer: <br>(Speedy Transaction)<select id ="cardsoftype" name = "pa
 <option value= " Maestro">Maestro</option>
 <hr>
 </select>
-<button id="gen" onclick="gentoken()">Token</button>
+<button id="gen" onclick="gentoken()">Token Generator</button>
 <hr>
-<button id="pay1" onclick = "expend(this)">Pay Bill</button><hr>
-<button id="pay1" onclick = "bambora pay website"> Cancel Bill</button> <hr>
-<button id="pay1" onclick = "screenshot">Screenshot</button><hr>
-<button><input type="file" id ="paypicture"/> Upload</button>
-
+<button id="pay1" onclick ="extend(this)">Bill Pay</button><hr>
+<button id="pay2" onclick = "bambora web link"> Cancel Bill</button> <hr>
 <hr>
 (To use this button only on wrong card entry details):
 <button onclick="reset()">RESET</button>
 </fieldset>
  </form>  
  
-<script>  
-function
-/*OT Token Generator*/ gentoken()
+ <button id="pay3" onclick = "screenshot()">Screenshots</button><hr>
+<button><input type="file" id ="paypicture"/> Upload</button>
+ 
+<script> 
+/*OT Token Generator*/ 
+function gentoken()
 {
 var x ='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@#&_-+()/?!;:=¢¥€|><%';
 var y = x.length;
@@ -330,7 +320,8 @@ for(i=0; i < 14; i++)
 {
 txt += x[Math.floor(Math.random() * y)]; 
 }  
-/*sending token to bank*/
+
+/*sending token to bank via nodemailer*/
 export {txt};
 
 /*cc no data changed to token*/
@@ -347,7 +338,208 @@ document.getElementById("gen").style.display ="none";
 
 /*bank response output*/
 console.log(approved +"" + declined +"" +retry);
+
+function expend(eve)
+{
+var payoption, i, pays, charging,totaltopay;
+pay=[];
+pays = eve.forms.id("expenses");
+payoption = eve.options[eve.selectedIndex].text;
+
+console.log(payoption);
+
+if (approved == 1001 || approved == 1002 || approved ==1003 || approved ==1004 && payoption == "AmericanExpress")
+{
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+else if
+(approved == 1001 || approved == 1002 || approved ==1003 || approved ==1004 && payoption == "ChinaUnionPay")
+{
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+else if(approved == 1001 || approved == 1002 || approved ==1003 || approved ==1004 && payoption == "JCB")
+{
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+else if(approved == 1001 || approved == 1002 || approved ==1003 || approved ==1004 && payoption == "DinersClubCarteBlanche")
+{
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+else if(approved == 1001 || approved == 1002 || approved ==1003 || approved ==1004 && payoption == "DinersClubenRoute")
+{
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+else if(approved == 1001 || approved == 1002 || approved ==1003 || approved ==1004 && payoption == "DinersClubInternational")
+{
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+else if(approved == 1001 || approved == 1002 || approved ==1003 || approved ==1004 && payoption == "DiscoverCard")
+{
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+else if(approved == 1001 || approved == 1002 || approved ==1003 || approved ==1004 && payoption == "Laser")
+{
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+else if(approved == 1001 || approved == 1002 || approved ==1003 || approved ==1004 && payoption == "MasterCard")
+{
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+else if(approved == 1001 || approved == 1002 || approved ==1003 || approved ==1004 && payoption == "Visa")
+{
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+else if(approved == 1001 || approved == 1002 || approved ==1003 || approved ==1004 && payoption == "VisaElecteon")
+{
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+else if(approved == 1001 || approved == 1002 || approved ==1003 || approved ==1004 && payoption == "Maestro")
+{
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+else if(declinedout == 1005 || declinedout == 1012 || declinedout == 1013 ||declinedout == 1027 || declinedout == 1029 || declinedout == 1039)
+{
+alert("payment approval declined by bank");
+}
+else if(retryout == 
+1015 || retryout == 1017 || retryout == 1018 || retryout == 1019 || retryout == 1020 || retryout == 1021 || retryout == 1022)
+{
+alert("Sorry...retry again on reset");
+}
+
+var cardType, cardtoken, checkstatus;
+
+/*User not choosen card selection, Luhn card method validation*/
+
+var cardno = (document.getElementById("card").value);
+
+var len = cardno.length; 
+var cardType, checkin, chk, valid, checkstatus;
+
+(chk = 0),
+(prodArr = [
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+[0, 2, 4, 6, 8, 1, 3, 5, 7, 9],]),
+(checkin = 0);
+
+while(len--) {
+checkin += prodArr[chk][parseInt(cardno.charAt(len), 10)];
+chk ^= 1;
+}
+
+if(checkin % 10 === 0 && checkin > 0)
+ {
+valid = 'valid';
+ } 
+else
+ {
+valid = 'not valid';
+}
+
+cardtoken = card.toString().replace(/\s+/g, '');
+
+if(checkstatus == 34)
+{
+cardType = "American Express";
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+
+if (/^(34)|^(37)/.test(cardtoken)) 
+{
+cardType = 'American Express';
+ charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+ }
+ 
+ if (/^(62)|^(88)/.test(cardtoken)) 
+ {
+cardType = 'China UnionPay';
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+
+if (/^30[0-5]/.test(cardtoken)) 
+{
+cardType = 'Diners Club Carte Blanche';
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+
+if (/^(2014)|^(2149)/.test(cardtoken)) 
+{
+cardType = 'Diners Club enRoute';
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+
+if (/^36/.test(cardtoken)) {
+cardType = 'Diners Club International';
+ charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging; 
+}
+      
+if(/^(6011)|^(622(1(2[6-9]|[3-9][0-9])|[2-8][0-9]{2}|9([01][0-9]|2[0-5])))|^(64[4-9])|^65/.test(cardtoken)
+) {
+cardType = 'Discover Card';
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+      
+if (/^35(2[89]|[3-8][0-9])/.test(cardtoken)) {
+cardType = 'JCB';
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+
+if (/^(6304)|^(6706)|^(6771)|^(6709)/.test(cardtoken)) {
+cardType = 'Laser';
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+
+if (/^(5018)|^(5020)|^(5038)|^(5893)|^(6304)|^(6759)|^(6761)|^(6762)|^(6763)|^(0604)/.test(cardtoken )) {
+cardType = 'Maestro'; 
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+
+if (/^5[1-5]/.test(cardtoken )) {
+cardType = 'MasterCard';
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+      
+if (/^4/.test(cardtoken )) {
+cardType = 'Visa';
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+      
+if(/^(4026)|^(417500)|^(4405)|^(4508)|^(4844)|^(4913)|^(4917)/.test(cardtoken )) {
+cardType = 'Visa Electron';
+charging = (chargedout * grandfruit);
+totaltopay = grandfruit + charging;
+}
+
+console.log(cardtoken  + ' is a(n) ' + cardType + " and it's " + valid);
+/*to check payment link of bambora*/
+}
 </script> 
+
+<script src ="tokensender.js"></script>
 
 <p id = "dist"></p>
 <p id = "desp"></p>
@@ -539,8 +731,6 @@ document.getElementById("weight").innerHTML = "Net Wt Each Product:" + "<br>" +
 </script>
 
 <p id ="demo4"></p>
-
-<
 
 <script>
 function forward()
