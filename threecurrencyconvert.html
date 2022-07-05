@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select currency converter</title>
+ 
+ <script data-require="angularjs@1.5.5" data-server="1.5.5" src ="https://code.angular.org/1.5.5/angular.js"></script>
+</head>
+
+<body>
+<div data-ng-app="myapp"data-ng-controller="currency converter as convert">
+ <input id="money" type="number" min ="0" data-ng-model="convert.inputValue"/>
+<select data-ng-model="convert.inCurr">
+  <option data-ng-repeat="currency in convert.currencies">
+{{$}}
+</option>
+<option>
+  {{€}}
+</option>
+<option>
+  {{₹}}
+</option>
+</select>
+<br/>
+<input id="moneytocurrency"type="number" min="0" data-ng-model="convert.output()"/>
+<select data-ng-model="convert.outCurr">
+    <option data-ng-repeat="currency in convert.currencies">
+ {{$}}
+ </option>
+ <option>
+  {{€}}
+</option>
+<option>
+  {{₹}}
+</option>
+</select> 
+
+<select ng-model="selectedName" ng-options="x for x in curr">
+</select>
+</div>
+ 
+<script>
+var ppp = angular.module("myapp",[]).controller("convert", function() {
+  return; 
+   });
+</script> 
+</body>
+</html>
