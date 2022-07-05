@@ -3,7 +3,7 @@
 and web designing or other suitable position.
 - 🌱 I’m currently learning angular js and Ruby on rails.
 - 💞️ I’m looking to collaborate on working projects ..
-- 📫 How to reach me via https://github.com/cool31/cool31/main/grocerystore.html for portfolio with
+- 📫 How to reach me via https://github.com/cool31/cool31/main/portfolio.html  with
 detailed description of portfolio and projects done.
 
 <!---
