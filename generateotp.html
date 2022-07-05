@@ -1,10 +1,18 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <title>Generate OTP</title>
+ </head>
+ 
+ <p id="goss"></p>
+ 
  <script>
   function gen()
   {
-   var x ='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+   var x ='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@#&_-+()/?!;:=¢¥€|><%';
    var y = x.length;
    var i, txt ="";
-   for(i=0; i < 6; i++)
+   for(i=0; i < 14; i++)
    {
    txt += x[Math.floor(Math.random() * y)];     
   }
