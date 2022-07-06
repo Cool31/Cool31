@@ -1,3 +1,5 @@
+header("Access-Control-Allow-Origin: *");
+
 <head>
 <script src="https://../ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">   
 ></script>
@@ -65,7 +67,11 @@ $scope.responded = function(){
 
 $scope.statusText = response.statusText;
  });  
-});    
+});
+    
+xt.config(function($sceDelegateProvider) {
+ $sceDelegateProvider.resourceUrlWhitelist(['http://github.com/cool31/cool31/main/financial/.outputdata.php']);
+});
 
 export{approved, cardcharges, declined, retry};
 </script>
