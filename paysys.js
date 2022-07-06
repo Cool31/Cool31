@@ -1,5 +1,5 @@
 header("Access-Control-Allow-Origin: *");
-
+header("Access-Control-Allow-Origin: https://github.com/cool31/cool31/main/financial/bankresponse.js");
 <div data-ng-app="appapp" ng-controller="controls"></div>
 
 <script type="module" src ="https://github.com/cool31/cool31/main/financial/bankresponse.js">
