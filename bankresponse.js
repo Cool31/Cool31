@@ -1,5 +1,5 @@
 header("Access-Control-Allow-Origin: *");
-
+header("Access-Control-Allow-Origin: https://github.com/cool31/cool31/main/financial/paysys.js");
 <head>
 <script src="https://../ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">   
 ></script>
