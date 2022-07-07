@@ -673,7 +673,7 @@ grandfruit = (fruitall + charge);
    }
 }
 
-document.getElementById("dist").innerHTML = "Purchased Amount Each Product:" + "<br>" +
+document.getElementById("dist").innerHTML = `"Purchased Amount Each Product:" + "<br>" +
 "Grapes " + "(" + xxp[7].value + " Kg):" + " " + "$" + grap.toFixed(2) + "<br>" +
 "Cherry:" + "(" + xxp[8].value + " Kg):" + " " + "$" + cherr.toFixed(2) +"<br>" + 
 "Oranges:" + "(" + xxp[9].value + " Kg):" + " " + "$" + oran.toFixed(2) + "<br>" +
@@ -691,7 +691,7 @@ document.getElementById("dist").innerHTML = "Purchased Amount Each Product:" + "
 "Amount Payable:" + "  " + "$" + grandfruit +"<br>" + "<br>" +
 "Card Charges:"+ "" +  cardcharges + "<br/>" +
 "TOTAL PAYABLE AMT:" +  totaltopay + "<br/>" +
-"Total Products:" + " " + custo;
+"Total Products:" + " "` + custo;
 alert("Pay bill via QR scan/credit card");
 
 var custdtls =[];
@@ -717,7 +717,7 @@ employ = custdtls.toString(emp);
 
 custdtls = [customer, orddt, ordno, mobileno, addr, employ];
 
-document.getElementById("desp").innerHTML = "Customer Shipping Details:" + "<br>" +
+document.getElementById("desp").innerHTML = `"Customer Shipping Details:" + "<br>" +
 "Customer Name:" + "" + customer + "<br>" +
 "Mob No." + "" + mobileno + "<br>" + "Ordered Dt:" + "" + orddt + "<br>"+
 
@@ -731,7 +731,7 @@ document.getElementById("weight").innerHTML = "Net Wt Each Product:" + "<br>" +
 "Green Grapes:" + ""  + greennet + "<br>" + "Bananas:" + "" + banananet +"<br>" +
 "Peaches:" + ""  + peachnet + "<br>" + "Apricots:" + "" + aprinet +"<br>" +
 "Cashewnuts:" + ""  + cashnet + "<br>" + "Dry Fruits:" + "" + drynet + "<br>" +
-"Total Net Weight:" + " " + finalwt;
+"Total Net Weight:" + " "` + finalwt;
 }
 </script>
 
