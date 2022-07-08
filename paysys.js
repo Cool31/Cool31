@@ -1,7 +1,10 @@
 header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Origin: https://GitHub.com/cool31/cool31/main/financial/bankresponse.js");
+header("Access-Control-Allow-Origin: https://GitHub.com/cool31/cool31/main/financial/paysys.js");
+
+header("Access-Control-Allow-Origin: https://cors-everywhere-herokuapp.com/https://github.com/cool31/cool31/main/financial/paysys.js");
 
 header("Access-Control-Allow-Origin:https://github.com/monsur/test-cors.org");
+
 header("Access-Control-Allow-Origin:https://test-cors.org");
 
 <system.webServer>
