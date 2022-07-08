@@ -16,12 +16,15 @@ const express = require('express');
 const request = require('request');
 const app = express();
 app.use((req, res, next) => { res.header('Access-Control-Allow-Origin', '*'); next();});
-app.get('/bankresponse/random', (req, res) => { request( { url: 'https://github.com/cool31/cool31/main/financial/paysys.js/random' }, (error, response, body) => { if (error || response.statusCode !== 200) { return res.status(500).json({ type: 'error', message: err.message }); }
+app.get('/bankresponse.js/random', (req, res) => { request( { url: 'https://github.com/cool31/cool31/main/financial/paysys.js/random' }, (error, response, body) => { if (error || response.statusCode !== 200) { return res.status(500).json({ type: 'error', message: err.message }); }
 res.json(JSON.parse(body)); } )});
-const PORT = process.env.PORT || 3000;app.listen(PORT, () => console.log(`=> console.log(`listening on ${PORT}`));
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => console.log(`=> console.log(`listening on ${PORT}`));
     
 Header set Access-Control-Allow-Origin "https://github.com/cool31/cool31/main/financial/paysys.js"
+
 Header set Access-Control-Allow-Methods "GET,PUT,POST,DELETE"
+
 Header set Access-Control-Allow-Headers "Content-Type, Authorization"
 
 <head>

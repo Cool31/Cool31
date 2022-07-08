@@ -5,7 +5,7 @@ header("Access-Control-Allow-Origin:https://github.com/monsur/test-cors.org");
 header("Access-Control-Allow-Origin:https://test-cors.org");
 
 <system.webServer>
-<httpProtocol> <customHeaders> <add name="Access-Control-Allow-Origin" value="*" /> 
+<httpProtocol> <customHeaders> <add name="Access-Control-Allow-Origin" value="*"/> 
  <add name="Access-Control-Allow-Headers" value="Content-Type" /> 
  <add name="Access-Control-Allow-Methods" value="GET, POST, PUT, DELETE, OPTIONS" /> 
 </customHeaders>
@@ -18,7 +18,7 @@ const app = express();
 app.use((req, res, next) => { res.header('Access-Control-Allow-Origin', '*'); next();});
 app.get('/bankresponse/random', (req, res) => { request( { url: 'https://github.com/cool31/cool31/main/financial/bankresponse.js/random' }, (error, response, body) => { if (error || response.statusCode !== 200) { return res.status(500).json({ type: 'error', message: err.message }); }
 res.json(JSON.parse(body)); } )});
-const PORT = process.env.PORT || 3000;app.listen(PORT, () => console.log(`=> console.log(`listening on ${PORT}`));
+const PORT = process.env.PORT || 8000;app.listen(PORT, () => console.log(`=> console.log(`listening on ${PORT}`));
     
 Header set Access-Control-Allow-Origin "https://github.com/cool31/cool31/main/financial/bankresponse.js"
 Header set Access-Control-Allow-Methods "GET,PUT,POST,DELETE"
