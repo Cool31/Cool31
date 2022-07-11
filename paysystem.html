@@ -342,6 +342,9 @@ document.getElementById("gen").disabled="false";
 
 function extend()
 {
+myfunction();
+console.log(grandfruit);
+
 var i, pays, currency12, charging, totaltopay;
 
 pays = cardsoftype.options[cardsoftype.selectedIndex].text;
@@ -692,9 +695,9 @@ ev.replace(/</g, "&lt");
 
 order.action="https://github.com/cool31/cool31/main/financial/output.php";
 order.action="https://github.com/cool31/cool31/main/financial/bankresponse.js";
+order.action="https://api.V1.checkout.bambora.com/sessions";
 
-
-document.getElementById("dist").innerHTML = "Purchased Amount Each Product in ₹:"+ "<br>" +
+/*document.getElementById("dist").innerHTML = "Purchased Amount Each Product in ₹:"+ "<br>" +
 "Grapes: ₹" + " "+grap.toFixed(2) +"<br>" +
 "Cherry: ₹" + "" + cherr.toFixed(2) + "<br>" +
 "Oranges: ₹" + oran.toFixed(2) + "<br>" +
@@ -710,10 +713,10 @@ document.getElementById("dist").innerHTML = "Purchased Amount Each Product in �
 "Total Purchased Amt: ₹" + ""+ fruitall + "<br>" +
 "Shipping Amount:" + " " + charge + "<br>" +
 "Purchased Amount:" + "  " + grandfruit +"<br>" +
-"Total Products:" + " " + custo;
+"Total Products:" + " " + custo;*/
 
 
-/*document.getElementById("dist").innerHTML = "Purchased Amount Each Product:" + "<br>" +
+document.getElementById("dist").innerHTML = "Purchased Amount Each Product:" + "<br>" +
 "Grapes " + "(" + xxp[7].value + " Kg):" + " " + "₹" + grap.toFixed(2) + "<br>" +
 "Cherry:" + "(" + xxp[8].value + " Kg):" + " " + "₹" + cherr.toFixed(2) +"<br>" + 
 "Oranges:" + "(" + xxp[9].value + " Kg):" + " " + "₹" + oran.toFixed(2) + "<br>" +
@@ -729,7 +732,7 @@ document.getElementById("dist").innerHTML = "Purchased Amount Each Product in �
 "Total Purchased Amt:" + " " + "₹" + fruitall + "<br>" +
 "Shipping Amount:" + " " + "₹" + charge + "<br>" +
 "Purchased Amount:" + "  " + "₹" + grandfruit +"<br>" +
-"Total Products:" + " " + custo;*/
+"Total Products:" + " " + custo;
 
 
 var custdtls =[];
@@ -780,7 +783,7 @@ document.getElementById("weight").innerHTML = "Net Wt Each Product:" + "<br>" +
 "Total Net Weight:" + " " +finalwt;
 };
 
-/*function screenshot()
+function screenshot()
 {
  html2canvas(document.body).then(function(canvas) => { 
 const base64image = canvas.toDataURL("image/png");    
@@ -789,7 +792,7 @@ $(tWindow.document.body).html("<img id='Image' src=" + myImage + " style='width:
 tWindow.focus(); tWindow.print(); 
  }); 
  }); 
- }*/
+ }
 </script>
 
 <p id ="demo4">
