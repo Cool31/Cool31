@@ -29,6 +29,7 @@ Header set Access-Control-Allow-Methods "GET,PUT,POST,DELETE"
 
 Header set Access-Control-Allow-Headers "Content-Type, Authorization"
 
+/* To install moesif plugin to overcome cors policy*/
 <head>
 <script src="https://../ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">   
 ></script>
