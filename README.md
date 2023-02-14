@@ -3,7 +3,7 @@
 and web designing or other suitable position as per portfolio.
 - 🌱 I’m currently doing internship projects as outlined in updated portfolio.
 - 💞️ I’m looking to collaborate on working projects ..
-- 📫 How to reach me via https://github.com/cool31/cool31/main/portfolio.html  with
+- 📫 How to reach me via _________ with
 detailed description of portfolio and projects done.
 
 <!---
