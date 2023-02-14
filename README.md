@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Cool31
 - 👀 I’m interested in working as frontend developer & backend developer
-and web designing or other suitable position.
-- 🌱 I’m currently learning angular js and Ruby on rails.
+and web designing or other suitable position as per portfolio.
+- 🌱 I’m currently doing internship projects as outlined in updated portfolio.
 - 💞️ I’m looking to collaborate on working projects ..
 - 📫 How to reach me via https://github.com/cool31/cool31/main/portfolio.html  with
 detailed description of portfolio and projects done.
